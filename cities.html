@@ -1,136 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bootstart-Cities</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    div.col-sm-2, div.col-md{
-        background-color: linen;
+    div.col-sm-2,
+    div.col-md {
+      background-color: linen;
     }
 
-    p{
-        color: violet;
+    p {
+      color: violet;
     }
-  </style>
   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>Visit cities with Amogh</h1>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="cities.html">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cities.html">Cities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="advanced.html">Advanced</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <h1>Visit cities with Amogh</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">N</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">L</div>
+      <div class="col-sm-2">L</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">A</div>
+    </div>
+    <div class="row">
+      <div class="col-md">Nizamabad</div>
+      <div class="col-md">Armoor</div>
+      <div class="col-md">Lucknow</div>
+      <div class="col-md">Lakhipur</div>
+      <div class="col-md">Adilabad</div>
+      <div class="col-md">Ankapur</div>
+    </div>
+    <br>
+    <br>
+    <p> The city names row breaks first it is because 'col-sm-2' assigns a fixed width of 2 grid units(1/6)
+      of the available horizontal space on small and larger screens, while 'col-md' adapts its width
+      dynamically based on screen size and content it automatically adjusts the column width
+      based on the screen size and available space.
+    </p>
+
     <div class="container">
-        <div class="row">
-            <div class="col-sm-2">N</div>
-            <div class="col-sm-2">A</div>
-            <div class="col-sm-2">L</div>
-            <div class="col-sm-2">L</div>
-            <div class="col-sm-2">A</div>
-            <div class="col-sm-2">A</div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="nizamabad.jpg" class="img-fluid" width="400"
+            alt="A pic of Nizamabad city">
         </div>
-        <div class="row">
-            <div class="col-md">Nizamabad</div>
-            <div class="col-md">Armoor</div>
-            <div class="col-md">Lucknow</div>
-            <div class="col-md">Lakhipur</div>
-            <div class="col-md">Adilabad</div>
-            <div class="col-md">Ankapur</div>
+        <div class="col-sm-4">
+          <img src="armoor.jpg" class="img-fluid " width="400"alt="A pic of Armoor">
         </div>
-        <br>
-        <br>
-        <p> The city names row breaks first it is because 'col-sm-2' assigns a fixed width of 2 grid units(1/6)
-            of the available horizontal space on small and larger screens, while 'col-md' adapts its width 
-            dynamically based on screen size and content it automatically adjusts the column width
-            based on the screen size and available space.
-        </p>
+        <div class="col-sm-4">
+          <img src="lucknow.jpg" class="img-fluid" width="400" alt="A pic of Lucknow">
 
-        <div class="container">
-            <img src="nizamabad.jpg" class="img-fluid" width="300" height="300" alt="A pic of Nizamabad city">
-            <img src="armoor.jpg" class="img-fluid" width="300" height="300" alt="A pic of Armoor">
-            <img src="lucknow.jpg" class="img-fluid" width="300" height="300"  alt="A pic of Lucknow">
         </div>
-
-        <div class="container">
-              <img src="adilabad.jpg" class ="img-thumbnail" width="300" height="300" alt="icon"> 
-              <img src="ankapur.jpg" class="img-thumbnail" width="300" height="300" alt="icon">
-              <img src="likhapur.jpg" class="img-thumbnail" width="300" height="300" alt="icon">
-            </div>
-        </div>
-        <table class="table table-striped table-hover table-bordered border-primary">
-            <caption>A table of names of Cities, Rivers, Trees</caption>
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Letter</th>
-                    <th scope="col">City</th>
-                    <th scope="col">River</th>
-                    <th scope="col">Tree</th>
-                </tr>
-            </thead>
-            <tbody>
-              <tr>
-              <th scope="row">A</td>
-              <td>Amristar</td>
-              <td>Abita River</td>
-              <td>Aliso</td>
-            </tr>
-            <tr>
-              <th scope="row">S</th>
-              <td>Sydney</td>
-              <td>Sticky River</td>
-              <td>Sandalwood</td>
-            </tr>
-            <tr>
-              <th scope="row">H</th>
-              <td>Houston</td>
-              <td>Hudson River</td>
-              <td>Hackberry</td>
-            </tr>
-            <tr>
-              <th scope="row">R</th>
-              <td>Roseville</td>
-              <td>Ruby River</td>
-              <td>Redbay</td>
-            </tr>
-            <tr>
-              <th scope="row">P</th>
-              <td>Pennsylvania</td>
-              <td>Pocasset River</td>
-              <td>Palma pita</td>
-            </tr>
-            <tr>
-              <th scope="row">N</th>
-              <td>Nellore</td>
-              <td>Naches River</td>
-              <td>Northern Hackberry</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="container">
-            <div class="btn-toolbar" role="toolbar" aria-label="Button groups">
-                <div class="btn-group" role="group" aria-label="Letters with images">
-                    <button type="button" class="btn btn-success">A</button>
-                    <button type="button" class="btn btn-success">S</button>
-                    <button type="button" class="btn btn-success">H</button>
-                </div>
-                <div class="btn-group" role="group" arial-label="Alert buttons">
-                    <button type="button" class="btn btn-warning">R</button>
-                    <button type="button" class="btn btn-warning">P</button>
-                </div>
-                <div class="btn-group" role="group" arial-label="Remaining letters">
-                    <button type="button" class="btn btn-danger">N</button>
-                </div>
-            </div>
-        </div>
-        <br>
+      </div>
+    </div>
 
 
-          
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="adilabad.jpg" class="img-thumbnail " width="400" alt="Forest">
+        </div>
+        <div class="col-sm-4"> 
+          <img src="ankapur.jpg" class="img-thumbnail" width="400" alt="Forest">
+        </div>
+        <div class="col-sm-4">
+          <img src="likhapur.jpg" class="img-thumbnail" width="400" alt="Forest">
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+<caption>A table of names of Cities, Rivers, Trees</caption>
+  <table class="table table-bordered border-primary table-striped table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Letter</th>
+        <th scope="col">City</th>
+        <th scope="col">River</th>
+        <th scope="col">Tree</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">A</td>
+        <td>Amristar</td>
+        <td>Abita River</td>
+        <td>Aliso</td>
+      </tr>
+      <tr>
+        <th scope="row">S</td>
+        <td>Sydney</td>
+        <td>Sticky River</td>
+        <td>Sandalwood</td>
+      </tr>
+      <tr>
+        <th scope="row">H</td>
+        <td>Houston</td>
+        <td>Hudson River</td>
+        <td>Hackberry</td>
+      </tr>
+      <tr>
+        <th row="scope">R</td>
+        <td>Roseville</td>
+        <td>Ruby River</td>
+        <td>Redbay</td>
+      </tr>
+      <tr>
+        <th scope="row">P</td>
+        <td>Pennsylvania</td>
+        <td>Pocasset River</td>
+        <td>Palma pita</td>
+      </tr>
+      <tr>
+        <th scope="row">N</td>
+        <td>Nellore</td>
+        <td>Naches River</td>
+        <td>Northern Hackberry</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn">A</button>
+  <button type="button" class="btn">S</button>
+  <button type="button" class="btn">H</button>
+  <button type="button" class="btn">R</button>
+  <button type="button" class="btn">P</button>
+  <button type="button" class="btn">N</button>
+    <div class="btn-toolbar" role="toolbar" aria-label="Button groups">
+      <div class="btn-group" role="group" aria-label="Letters with images">
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">S</button>
+        <button type="button" class="btn btn-success">H</button>
+      </div>
+      <div class="btn-group" role="group" arial-label="Alert buttons">
+        <button type="button" class="btn btn-warning">R</button>
+        <button type="button" class="btn btn-warning">P</button>
+      </div>
+      <div class="btn-group" role="group" arial-label="Remaining letters">
+        <button type="button" class="btn btn-danger">N</button>
+      </div>
+    </div>
+  <br>
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenubutton1">
+      <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+      <li><a class="dropdown-item" href="advanced.html">advanced</a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <br>  
+  <br>
+
+  <form>
+    <div class="form-group">
+      <label for="InputEmailAddress" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="city" class="form-label">City</label>
+      <input type="text" class="form-control" placeholder="Enter your city" id="city">
+    </div><br>
+    
+
+    </div>
+
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+    </div><br>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    </div>
+  </form>
+
+
 
 
 
 </body>
+
 </html>
